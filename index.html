@@ -12,20 +12,30 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="font-poppins">
     <!-- The UI will adjust for larger screen and in future may be edited to suit mobile screens -->
     <header>
-        <nav>
-            <div>
-                <img src="assets/images/logo.png" alt="EasySet 24">
-                <i>Quesition mark</i>
+        <nav class="mx-52 my-10">
+            <div class="flex justify-between gap-2 items-center">
+                <img src="assets/images/logo.png" alt="EasySet 24" class="w-[6.5rem] h-[4.125rem] object-cover">
+                <a href="#">
+                    <i class="fa-regular fa-circle-question text-[#07689F]"></i>
+                </a>
                 <img src="https://th.bing.com/th/id/R.86a03b1c70fe8d317d515be640228fe5?rik=%2f3LOSSZUk42OAQ&pid=ImgRaw&r=0"
-                    alt="UK flag">
-                <input type="search" name="search" id="search" placeholder="Search">
+                    alt="UK flag" class="w-6 h-6 rounded-[1.25rem] ">
+                <form action="" class="grow flex border border-solid rounded-[.25rem] w-[37.8125] justify-between">
+                    <input type="search" name="search" id="search" placeholder="Search"
+                        class="outline-none  px-2 py-1  ">
+                        <button class="px-2 py-1">
+                            <i class="fa-solid fa-magnifying-glass text-gray-400 opacity-70 hover:opacity-100"></i>
+                        </button>
+                </form>
 
-                <div>
-                    <input type="button" value="Sign In">
-                    <input type="button" value="Sign Up">
+                <div class=" flex gap-2 text-center">
+                    <input type="button" value="Sign In"
+                        class="border border-solid border-[#07689F] text-[#07689F] cursor-pointer px-2 py-1 w-[11.8125rem] rounded-[.25rem]">
+                    <input type="button" value="Sign Up"
+                        class="border border-solid border-[#07689F] text-[#07689F] cursor-pointer px-2 py-1 w-[11.8125rem] rounded-[.25rem]">
                 </div>
             </div>
             <div>
