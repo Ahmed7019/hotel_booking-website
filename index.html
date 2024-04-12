@@ -16,7 +16,7 @@
 <body class="font-poppins">
     <!-- The UI will adjust for larger screen and in future may be edited to suit mobile screens -->
     <header>
-        <nav class="mx-52 my-6">
+        <nav class="mx-36 my-6">
             <div class="flex justify-between gap-2 items-center">
                 <img src="assets/images/logo.png" alt="EasySet 24" class="w-[6.5rem] h-[4.125rem] object-cover">
                 <a href="#">
@@ -70,29 +70,52 @@
                         alt="Trip" class="w-full object-contain relative">
                 </div>
                 <!-- The text within the picture -->
-                <div class="absolute bottom-12 left-52">
+                <div class="absolute bottom-16 left-36">
                     <h1 class="text-white text-4xl font-bold leading-relaxed">Discover Your Trip <br> Worldwide !</h1>
                 </div>
-                <div class="absolute bottom-0 left-52">
+                <div class="absolute bottom-[-1.5rem] left-36 ">
+
+
                     <!-- Input fields -->
-                    <form>
-                        <input type="text" name="" id="" placeholder="Where are you going to">
-                        <!-- Check in&out dates -->
-                        <input type="date" name="" id="">
-                        <input type="date" name="" id="">
-                        <!-- Number of roommates-->
-                        <select name="members" id="">
-                            members
-                            <optgroup>
-                                <option value="adults">Adults</option>
-                                <option value="adults">Children</option>
-                            </optgroup>
-                            <optgroup>
-                                <option value="room">room</option>
-                                <option value="studio">Studio</option>
-                            </optgroup>
-                        </select>
-                        <button>
+                    <form class="border bg-white border-neutral-400 rounded-md overflow-hidden flex ">
+                        <div class=" flex justify-between items-center gap-2">
+                            <i class="fa-light fa-location-dot text-primaryBlue-500 text-2xl p-3"></i>
+                            <input type="text" name="destination" id="destination" placeholder="Where are you going to"
+                                class="py-5 pr-[6.875rem] outline-none border-r border-r-neutral-400 w-min">
+                        </div>
+
+                        <div class="flex items-center px-4 gap-2 ">
+                            <!-- Check in&out dates -->
+                            <!-- Create it as a text input then change it to date type -->
+                            <i class="fa-light fa-calendar-days text-primaryBlue-500 text-2xl "></i>
+                            <input type="text" name="" id="" class=" outline-none  w-min" placeholder="Check in date">
+                            <input type="text" name="" id=""
+                                class=" outline-none border-r border-r-neutral-400 py-5 w-min"
+                                placeholder="Check out date">
+                        </div>
+                        <div class="flex items-center justify-center gap-8">
+                            <!-- Number of roommates-->
+
+                            <input type="text" name="adults" id="adults-counter" class="w-8 outline-none"
+                                placeholder="Adults">
+                            <input type="text" name="children" id="children-counter" class="w-8 outline-none"
+                                placeholder="Children">
+
+                            <select name="members" id="" class="px-4 py-5 outline-none border-r border-r-neutral-400">
+                                <optgroup>
+                                    <option value="room">room</option>
+                                    <option value="studio">Studio</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+
+
+
+
+
+
+                        <button class="bg-primaryBlue-500 text-white px-4 py-5 font-bold">
                             Search
                         </button>
                     </form>
