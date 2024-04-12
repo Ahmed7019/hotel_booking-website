@@ -101,8 +101,8 @@
                                 placeholder="Children">
 
                             <select name="members" id="" class="px-4 py-5 outline-none border-r border-r-neutral-400">
-                                    <option value="room">room</option>
-                                    <option value="studio">Studio</option>
+                                <option value="room">room</option>
+                                <option value="studio">Studio</option>
                             </select>
                         </div>
 
@@ -118,50 +118,79 @@
     <br>
     <!-- main -->
 
-    <main>
+    <main class="sm:my-10 sm:mx-36">
         <section>
-
-            <h3>Special Offers</h3>
-            <input type="radio" name="all" id="offer">
-            <label for="all">All</label>
-            <input type="radio" name="hotel" id="offer">
-            <label for="hotel">hotel</label>
-            <input type="radio" name="flight" id="offer">
-            <label for="flight">flight</label>
-            <input type="radio" name="multi" id="offer">
-            <label for="multi">multi</label>
+            <h3 class="text-2xl font-bold py-2">Special Offers</h3>
+            <form action="" class="py-2">
+                <input type="radio" name="offer" id="offer">
+                <label for="offer">All</label>
+                <input type="radio" name="offer" id="offer">
+                <label for="offer">hotel</label>
+                <input type="radio" name="offer" id="offer">
+                <label for="offer">flight</label>
+                <input type="radio" name="flight" id="offer">
+                <label for="offer">multi</label>
+            </form>
 
             <!-- Images grid -->
-            <div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1421&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="road image">
-                    <p>Deals Discover <i class=" fas fa-long-arrow-alt-right"></i></p>
+            <div class="grid grid-cols-5 gap-2 relative rounded-md overflow-hidden">
+                <div class="col-span-2 relative">
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1421&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="road image" class="h-[17rem] w-full object-cover">
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                            <i class=" fas fa-long-arrow-alt-right pl-2"></i>
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="beach image">
-                    <p>Deals Discover <i class=" fas fa-long-arrow-alt-right"></i></p>
+                <div class="relative">
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="beach image" class="h-[17rem] w-full object-cover">
+                        <p class="absolute bottom-4 left-4 p-3  text-white bg-black/70  rounded-sm">Deals Discover <i
+                                class=" fas fa-long-arrow-alt-right pl-2"></i></p>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="desert">
-                    <p>Deals Discover <i class=" fas fa-long-arrow-alt-right"></i></p>
+                <div class="col-span-2 relative">
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="desert" class="h-[17rem] w-full object-cover">
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                            <i class=" fas fa-long-arrow-alt-right pl-2"></i>
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1565881606991-789a8dff9dbb?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Eiffel tower">
-                    <p>Deals Discover <i class=" fas fa-long-arrow-alt-right"></i></p>
+                <div class=" relative col-span-3">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1583692329420-89b34d01b9ce?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Eiffel tower" class="h-40 w-full object-cover">
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                            <i class=" fas fa-long-arrow-alt-right pl-2"></i>
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1563413613822-2e335ab72e74?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="beautiful city">
-                    <p>Deals Discover <i class=" fas fa-long-arrow-alt-right"></i></p>
+                <div class="relative">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1563413613822-2e335ab72e74?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="beautiful city" class="h-40 w-full object-cover">
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                            <i class=" fas fa-long-arrow-alt-right pl-2"></i>
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1568476612160-787b6a1d5fb1?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="boat">
-                    <p>Deals Discover <i class=" fas fa-long-arrow-alt-right"></i></p>
+
+                <div class="relative">
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1568476612160-787b6a1d5fb1?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="boat" class="h-40 w-full object-cover">
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                            <i class=" fas fa-long-arrow-alt-right pl-2"></i>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
