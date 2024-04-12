@@ -549,16 +549,6 @@ video {
   margin-right: 13rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -580,24 +570,12 @@ video {
   height: 1.5rem;
 }
 
-.h-\[4\.125rem\] {
-  height: 4.125rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
 .h-\[2\.5rem\] {
   height: 2.5rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-2\.5 {
-  height: 0.625rem;
+.h-\[4\.125rem\] {
+  height: 4.125rem;
 }
 
 .w-6 {
@@ -620,16 +598,12 @@ video {
   width: 7.6rem;
 }
 
-.w-\[50\] {
-  width: 50;
-}
-
-.w-\[51rem\] {
-  width: 51rem;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .grow {
@@ -680,19 +654,14 @@ video {
   border-style: solid;
 }
 
-.border-black {
+.border-neutral-300 {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(217 217 217 / var(--tw-border-opacity));
 }
 
 .border-primaryBlue-100 {
   --tw-border-opacity: 1;
   border-color: rgb(7 104 159 / var(--tw-border-opacity));
-}
-
-.border-neutral-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(217 217 217 / var(--tw-border-opacity));
 }
 
 .bg-primaryBlue-500 {
@@ -710,14 +679,14 @@ video {
   padding-right: 0.5rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -738,24 +707,14 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-primaryBlue-100 {
-  --tw-text-opacity: 1;
-  color: rgb(7 104 159 / var(--tw-text-opacity));
-}
-
-.text-neutral-300 {
-  --tw-text-opacity: 1;
-  color: rgb(217 217 217 / var(--tw-text-opacity));
-}
-
 .text-neutral-400 {
   --tw-text-opacity: 1;
   color: rgb(166 166 166 / var(--tw-text-opacity));
 }
 
-.text-primaryBlue-400 {
+.text-primaryBlue-100 {
   --tw-text-opacity: 1;
-  color: rgb(47 131 178 / var(--tw-text-opacity));
+  color: rgb(7 104 159 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -774,23 +733,6 @@ video {
 
 /* Poppins font Family */
 
-.visited\:bg-primaryBlue-400:visited {
-  background-color: rgb(47 131 178 );
-}
-
-.visited\:fill-primaryBlue-400:visited {
-  fill: #2F83B2;
-}
-
-.visited\:text-primaryBlue-400:visited {
-  color: rgb(47 131 178 );
-}
-
 .hover\:opacity-100:hover {
   opacity: 1;
-}
-
-.active\:text-primaryBlue-400:active {
-  --tw-text-opacity: 1;
-  color: rgb(47 131 178 / var(--tw-text-opacity));
 }
