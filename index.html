@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasySet 24</title>
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="src/input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -64,11 +64,16 @@
         </nav>
 
         <section>
-            <div>
-                <img src="assets/images/banner image.jpg" alt="Trip" class="w-full">
+            <div class="relative ">
+                <div class="relative max-h-96 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1583275478491-4368ae938226?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Trip" class="w-full object-contain relative">
+                </div>
                 <!-- The text within the picture -->
-                <h1>Discover Your Trip Worldwide !</h1>
-                <div>
+                <div class="absolute bottom-12 left-52">
+                    <h1 class="text-white text-4xl font-bold leading-relaxed">Discover Your Trip <br> Worldwide !</h1>
+                </div>
+                <div class="absolute bottom-0 left-52">
                     <!-- Input fields -->
                     <form>
                         <input type="text" name="" id="" placeholder="Where are you going to">
