@@ -614,6 +614,26 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
 .flex {
   display: flex;
 }
