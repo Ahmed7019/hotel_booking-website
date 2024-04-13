@@ -78,7 +78,7 @@
                     <!-- Input fields -->
                     <form class="border bg-white border-neutral-400 rounded-md overflow-hidden flex ">
                         <div class=" flex justify-between items-center gap-2">
-                            <i class="fa-light fa-location-dot text-primaryBlue-500 text-2xl p-3"></i>
+                            <i class="fa-solid fa-location-dot text-primaryBlue-500 text-xl p-3"></i>
                             <input type="text" name="destination" id="destination" placeholder="Where are you going to"
                                 class="py-5 pr-[4.875rem] outline-none border-r border-r-neutral-400 w-min">
                         </div>
@@ -86,15 +86,15 @@
                         <div class="flex items-center px-2 gap-2 ">
                             <!-- Check in&out dates -->
                             <!-- Create it as a text input then change it to date type -->
-                            <i class="fa-light fa-calendar-days text-primaryBlue-500 text-2xl p-3"></i>
+                            <i class="fa-solid fa-calendar-days text-primaryBlue-500 text-xl p-3"></i>
                             <input type="text" name="" id="" class=" outline-none  w-28" placeholder="Check in date">
                             <input type="text" name="" id=""
                                 class=" outline-none border-r border-r-neutral-400 py-5 w-36 mx-2"
                                 placeholder="Check out date">
                         </div>
-                        <div class="flex items-center justify-center gap-4">
+                        <div class="flex items-center justify-center gap-2">
                             <!-- Number of roommates-->
-
+                            <i class="fa-solid fa-user-plus text-primaryBlue-500 text-xl p-3"></i>
                             <input type="text" name="adults" id="adults-counter" class="w-20 outline-none"
                                 placeholder="Adults">
                             <input type="text" name="children" id="children-counter" class="w-20 outline-none"
@@ -120,8 +120,8 @@
 
     <main class="sm:my-10 sm:mx-36">
         <section>
-            <h3 class="text-2xl font-bold py-2">Special Offers</h3>
-            <form action="" class="py-2">
+            <fieldset action="" class="py-2" role="radiogroup">
+                <legend class="text-2xl font-bold py-2">Special Offers</legend>
                 <input type="radio" name="offer" id="#all">
                 <label for="offer">All</label>
                 <input type="radio" name="offer" id="hotel">
@@ -129,8 +129,8 @@
                 <input type="radio" name="offer" id="offer">
                 <label for="offer">flight</label>
                 <input type="radio" name="offer" id="offer">
-                <label for="offer">multi</label>
-            </form>
+                <label for="multi">multi</label>
+            </fieldset>
 
             <!-- Images grid -->
             <div class="grid grid-cols-5 gap-2 relative rounded-md overflow-hidden">
@@ -139,7 +139,8 @@
 
                         <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1421&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="road image" class="h-[17rem] w-full object-cover">
-                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm text-xs">Deals
+                            Discover
                             <i class=" fas fa-long-arrow-alt-right pl-2"></i>
                         </p>
                     </div>
@@ -149,8 +150,8 @@
 
                         <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="beach image" class="h-[17rem] w-full object-cover">
-                        <p class="absolute bottom-4 left-4 p-3  text-white bg-black/70  rounded-sm">Deals Discover <i
-                                class=" fas fa-long-arrow-alt-right pl-2"></i></p>
+                        <p class="absolute bottom-4 left-4 p-3  text-white bg-black/70  rounded-sm text-xs">Deals
+                            Discover <i class=" fas fa-long-arrow-alt-right pl-2"></i></p>
                     </div>
                 </div>
                 <div class="col-span-2 relative">
@@ -158,7 +159,8 @@
 
                         <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="desert" class="h-[17rem] w-full object-cover">
-                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm text-xs">Deals
+                            Discover
                             <i class=" fas fa-long-arrow-alt-right pl-2"></i>
                         </p>
                     </div>
@@ -167,7 +169,8 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1583692329420-89b34d01b9ce?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Eiffel tower" class="h-40 w-full object-cover">
-                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm text-xs">Deals
+                            Discover
                             <i class=" fas fa-long-arrow-alt-right pl-2"></i>
                         </p>
                     </div>
@@ -176,7 +179,8 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1563413613822-2e335ab72e74?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="beautiful city" class="h-40 w-full object-cover">
-                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm text-xs">Deals
+                            Discover
                             <i class=" fas fa-long-arrow-alt-right pl-2"></i>
                         </p>
                     </div>
@@ -187,7 +191,8 @@
 
                         <img src="https://images.unsplash.com/photo-1568476612160-787b6a1d5fb1?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="boat" class="h-40 w-full object-cover">
-                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm">Deals Discover
+                        <p class="absolute bottom-4 left-4 p-3 text-white bg-black/70  rounded-sm text-xs">Deals
+                            Discover
                             <i class=" fas fa-long-arrow-alt-right pl-2"></i>
                         </p>
                     </div>
