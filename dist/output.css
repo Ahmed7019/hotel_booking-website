@@ -596,6 +596,10 @@ video {
   top: 1rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -721,6 +725,10 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+
+.w-\[200\%\] {
+  width: 200%;
 }
 
 .grow {
