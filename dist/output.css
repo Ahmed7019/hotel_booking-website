@@ -1136,6 +1136,10 @@ video {
   --tw-gradient-to: rgb(217 217 217 / 0.5) var(--tw-gradient-to-position);
 }
 
+.to-neutral-400\/50 {
+  --tw-gradient-to: rgb(166 166 166 / 0.5) var(--tw-gradient-to-position);
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
