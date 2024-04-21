@@ -13,8 +13,20 @@ let hideEle = (ele) => {
   ele.nextElementSibling.classList.remove("hidden");
 };
 
+let showEle = (ele) => {
+  ele.parentElement.previousElementSibling.setAttribute("type", "password");
+  ele.classList.add("hidden");
+  ele.previousElementSibling.classList.remove("hidden");
+};
+
 showPwd.forEach((btn) => {
   btn.addEventListener("click", () => {
     hideEle(btn);
+  });
+});
+
+hidePwd.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    showEle(btn);
   });
 });
