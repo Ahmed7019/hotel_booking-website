@@ -1297,6 +1297,11 @@ video {
   line-height: 2.25rem;
 }
 
+.hover\:bg-primaryBlue-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 104 159 / var(--tw-bg-opacity));
+}
+
 .hover\:text-red-500:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -1305,6 +1310,11 @@ video {
 .hover\:text-yellow-400:hover {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.hover\:text-neutral-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 249 249 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
