@@ -1244,7 +1244,27 @@ video {
   outline-style: solid;
 }
 
+.outline-2 {
+  outline-width: 2px;
+}
+
 /* Poppins font Family */
+
+.selection\:outline *::-moz-selection {
+  outline-style: solid;
+}
+
+.selection\:outline *::selection {
+  outline-style: solid;
+}
+
+.selection\:outline::-moz-selection {
+  outline-style: solid;
+}
+
+.selection\:outline::selection {
+  outline-style: solid;
+}
 
 .placeholder\:text-3xl::-moz-placeholder {
   font-size: 1.875rem;
@@ -1284,12 +1304,28 @@ video {
   opacity: 1;
 }
 
+.hover\:outline:hover {
+  outline-style: solid;
+}
+
+.hover\:outline-1:hover {
+  outline-width: 1px;
+}
+
 .focus\:outline:focus {
   outline-style: solid;
 }
 
 .focus\:outline-1:focus {
   outline-width: 1px;
+}
+
+.focus\:outline-2:focus {
+  outline-width: 2px;
+}
+
+.active\:outline:active {
+  outline-style: solid;
 }
 
 @media (min-width: 640px) {
