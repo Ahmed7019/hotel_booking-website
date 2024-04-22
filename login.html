@@ -43,7 +43,7 @@
                         alt="packing suitcase" class="w-[350px] object-cover">
                 </div>
                 <div>
-                    <fieldset class="flex flex-col gap-2 justify-between">
+                    <fieldset class="flex flex-col gap-3 justify-between">
                         <legend class="text-xl font-bold ">Login</legend>
                         <p>Login to access your Easyset24 account</p>
                         <div class="flex flex-col gap-y-1">
@@ -67,20 +67,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <input type="checkbox" name="policies" id="policies">
-                            <label for="policies"> I agree to all the Terms and Privacy policies</label>
+                        <div class="flex justify-between">
+                            <div>
+                                <input type="checkbox" name="remember me" id="remember me">
+                                <label for="remember me">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="#" class="text-primaryBlue-400 hover:underline">Forgot Password?</a>
+                            </div>
                         </div>
                         <button class="bg-primaryBlue-400 text-neutral-100 px-1 py-3 rounded-md">
-                            Register Now
+                            Login
                         </button>
 
                         <div class="text-center flex flex-col items-center gap-2">
-                            <div>
-                                <p>Already have an account ? <a href="login.html"
-                                        class="hover:underline underline-offset-4">Login</a></p>
-                                <p>Or</p>
-                            </div>
+                            <p>Or</p>
                             <div class="flex gap-x-8 justify-center items-center">
                                 <a href="#">
                                     <i
@@ -98,10 +99,14 @@
                                     <!-- Google -->
                                 </a>
                             </div>
+                            <div>
+                                <p class="text-sm">Don't have an account in Easyset24 yet? <a href="register.html"
+                                        class="hover:underline underline-offset-4 text-primaryBlue-400">Register !</a>
+                                </p>
+
+                            </div>
                         </div>
                     </fieldset>
-                    <!-- </div> -->
-                    <!-- </div> -->
                 </div>
             </div>
         </form>
