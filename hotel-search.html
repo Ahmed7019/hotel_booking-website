@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel reservations</title>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="mx-36 my-6">
+            <div class="flex justify-between gap-2 items-center">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="EasySet 24" class="w-[6.5rem] h-[4.125rem] object-cover">
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-circle-question text-primaryBlue-100"></i>
+                </a>
+                <img src="https://th.bing.com/th/id/R.86a03b1c70fe8d317d515be640228fe5?rik=%2f3LOSSZUk42OAQ&pid=ImgRaw&r=0"
+                    alt="UK flag" class="w-6 h-6 rounded-[1.25rem] ">
+                <form action="" class="grow flex border border-solid rounded-[.25rem] w-[37.8125] justify-between">
+                    <input type="search" name="search" id="search" placeholder="Search"
+                        class="outline-none grow px-2 py-1  ">
+                    <button class="px-2 py-1">
+                        <i class="fa-solid fa-magnifying-glass text-gray-400 opacity-70 hover:opacity-100"></i>
+                    </button>
+                </form>
+
+                <div class=" flex gap-2 text-center">
+                    <button
+                        class="border border-solid border-primaryBlue-100 text-primaryBlue-100 cursor-pointer px-2 py-1 w-[11.8125rem] rounded-[.25rem] hover:bg-primaryBlue-100 hover:text-neutral-100"><a
+                            href="login.html">Sign In</a></button>
+                    <button
+                        class="border border-solid border-primaryBlue-100 text-primaryBlue-100 cursor-pointer px-2 py-1 w-[11.8125rem] rounded-[.25rem] hover:bg-primaryBlue-100 hover:text-neutral-100"><a
+                            href="register.html">Sign Up</a></button>
+                </div>
+            </div>
+            <div class=" flex justify-center items-center">
+                <ul class="w-full flex items-center gap-4 justify-center mt-10 ">
+                    <li><a href="#trip"
+                            class=" border border-solid border-neutral-300 text-neutral-400 rounded-[1.875rem] px-4 py-2 w-[7.6rem]">Trip</a>
+                    </li>
+                    <li><a href="#deal"
+                            class=" border border-solid border-neutral-300 text-neutral-400 rounded-[1.875rem] px-4 py-2 w-[7.6rem]">%Deals</a>
+                    </li>
+                    <li><a href="#hotel"
+                            class="bg-primaryBlue-500 text-white rounded-[1.875rem] px-4 py-2 w-[7.6rem] h-[2.5rem]">Hotel</a>
+                    </li>
+                    <li><a href="#flight"
+                            class=" border border-solid border-neutral-300 text-neutral-400 rounded-[1.875rem] px-4 py-2 w-[7.6rem]">Flight</a>
+                    </li>
+                    <li><a href="#apartment"
+                            class=" border border-solid border-neutral-300 text-neutral-400 rounded-[1.875rem] px-4 py-2 w-[7.6rem]">Apartment</a>
+                    </li>
+                    <li><a href="#camp"
+                            class=" border border-solid border-neutral-300 text-neutral-400 rounded-[1.875rem] px-4 py-2 w-[7.6rem]">Camper</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="flex flex-col gap-y-10">
+            <div class="text-primaryBlue-500 flex flex-col gap-y-2 mx-36">
+                <h3 class="font-bold text-2xl">What is your next dream place ? </h3>
+                <p class="text-sm">Find exclusive genuis rewards in every corner of the world!</p>
+            </div>
+
+            <div class="flex flex-col gap-y-6">
+                <div class=" mx-36">
+                    <!-- Input fields -->
+                    <form class="border bg-white border-neutral-400 rounded-md overflow-hidden flex ">
+                        <div class=" flex justify-between items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-primaryBlue-500 text-xl p-3"></i>
+                            <input type="text" name="destination" id="destination" placeholder="Where are you going to"
+                                class="py-5 pr-[4.875rem] outline-none border-r border-r-neutral-400 w-min">
+                        </div>
+
+                        <div class="flex items-center px-2 gap-2 ">
+                            <!-- Check in&out dates -->
+                            <!-- Create it as a text input then change it to date type -->
+                            <i class="fa-solid fa-calendar-days text-primaryBlue-500 text-xl p-3"></i>
+                            <input type="text" name="" id="" class=" outline-none  w-28" placeholder="Check in date">
+                            <input type="text" name="" id=""
+                                class=" outline-none border-r border-r-neutral-400 py-5 w-36 mx-2"
+                                placeholder="Check out date">
+                        </div>
+                        <div class="flex items-center justify-center gap-2">
+                            <!-- Number of roommates-->
+                            <i class="fa-solid fa-user-plus text-primaryBlue-500 text-xl p-3"></i>
+                            <input type="text" name="adults" id="adults-counter" class="w-20 outline-none"
+                                placeholder="Adults">
+                            <input type="text" name="children" id="children-counter" class="w-20 outline-none"
+                                placeholder="Children">
+
+                            <select name="members" id="" class="px-4 py-5 outline-none border-r border-r-neutral-400">
+                                <option value="room">room</option>
+                                <option value="studio">Studio</option>
+                            </select>
+                        </div>
+
+                        <button class="bg-primaryBlue-500 text-white px-4 py-5 font-bold">
+                            Search
+                        </button>
+                    </form>
+                </div>
+                <div class="relative ">
+                    <div class="relative h-[500px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Trip" class="w-full object-contain relative">
+                    </div>
+                    <!-- The text within the picture -->
+                    <div class="absolute top-20 w-full">
+                        <div class="flex flex-col items-center justify-between gap-y-40">
+                            <div class="flex flex-col items-center justify-center gap-y-4">
+                                <h2 class="text-4xl font-bold leading-relaxed">Why choose us</h2>
+                                <a href="#"
+                                    class="w-[12.5rem] px-4 py-2 bg-primaryBlue-400 text-white text-center rounded">Explore
+                                    more <i class="fa-solid fa-chevron-right text-xs ml-4"></i></a>
+                            </div>
+                            <div class="text-neutral-200  shadow-md  p-2 rounded-lg">
+                                <p class="font-light text-6xl">
+                                    Exclusive Hotel Search
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <br>
+
+
+</body>
+
+</html>
