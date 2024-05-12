@@ -74,39 +74,44 @@
             <div class="flex flex-col gap-y-6">
                 <div class=" mx-36">
                     <!-- Input fields -->
-                    <form class="border bg-white border-neutral-400 rounded-md overflow-hidden flex ">
-                        <div class=" flex justify-between items-center gap-2">
-                            <i class="fa-solid fa-location-dot text-primaryBlue-500 text-xl p-3"></i>
-                            <input type="text" name="destination" id="destination" placeholder="Where are you going to"
-                                class="py-5 pr-[4.875rem] outline-none border-r border-r-neutral-400 w-min">
-                        </div>
+                    <form>
+                        <div class="border bg-white border-neutral-400 rounded-md overflow-hidden flex ">
+                            <div class=" flex justify-between items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-primaryBlue-500 text-xl p-3"></i>
+                                <input type="text" name="destination" id="destination"
+                                    placeholder="Where are you going to"
+                                    class="py-5 pr-[4.875rem] outline-none border-r border-r-neutral-400 w-min">
+                            </div>
+                            
+                            <div class="flex items-center px-2 gap-2 ">
+                                <!-- Check in&out dates -->
+                                <!-- Create it as a text input then change it to date type -->
+                                <i class="fa-solid fa-calendar-days text-primaryBlue-500 text-xl p-3"></i>
+                                <input type="text" name="check-in-date" id="check-in-date" class=" outline-none  w-28"
+                                    placeholder="Check in date">
+                                <input type="text" name="check-out-date" id="check-out-date"
+                                    class=" outline-none border-r border-r-neutral-400 py-5 w-36 mx-2"
+                                    placeholder="Check out date">
+                            </div>
+                            <div class="flex items-center justify-center gap-2">
+                                <!-- Number of roommates-->
+                                <i class="fa-solid fa-user-plus text-primaryBlue-500 text-xl p-3"></i>
+                                <input type="text" name="adults" id="adults-counter" class="w-20 outline-none"
+                                    placeholder="Adults">
+                                <input type="text" name="children" id="children-counter" class="w-20 outline-none"
+                                    placeholder="Children">
 
-                        <div class="flex items-center px-2 gap-2 ">
-                            <!-- Check in&out dates -->
-                            <!-- Create it as a text input then change it to date type -->
-                            <i class="fa-solid fa-calendar-days text-primaryBlue-500 text-xl p-3"></i>
-                            <input type="text" name="" id="" class=" outline-none  w-28" placeholder="Check in date">
-                            <input type="text" name="" id=""
-                                class=" outline-none border-r border-r-neutral-400 py-5 w-36 mx-2"
-                                placeholder="Check out date">
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                            <!-- Number of roommates-->
-                            <i class="fa-solid fa-user-plus text-primaryBlue-500 text-xl p-3"></i>
-                            <input type="text" name="adults" id="adults-counter" class="w-20 outline-none"
-                                placeholder="Adults">
-                            <input type="text" name="children" id="children-counter" class="w-20 outline-none"
-                                placeholder="Children">
+                                <select name="members" id=""
+                                    class="px-4 py-5 outline-none border-r border-r-neutral-400">
+                                    <option value="room">room</option>
+                                    <option value="studio">Studio</option>
+                                </select>
+                            </div>
 
-                            <select name="members" id="" class="px-4 py-5 outline-none border-r border-r-neutral-400">
-                                <option value="room">room</option>
-                                <option value="studio">Studio</option>
-                            </select>
+                            <button class="bg-primaryBlue-500 text-white px-4 py-5 font-bold">
+                                Search
+                            </button>
                         </div>
-
-                        <button class="bg-primaryBlue-500 text-white px-4 py-5 font-bold">
-                            Search
-                        </button>
                     </form>
                 </div>
                 <div class="relative ">
